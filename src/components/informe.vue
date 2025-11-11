@@ -1,7 +1,11 @@
 <script setup>
 import { computed} from 'vue'
+
+const props=defineProps({
+  tareas:Array
+})
 const totalTareas=computed(()=> {
-  const cantidadTareas=tareas.value.length
+  const cantidadTareas=props.tareas.length
   return cantidadTareas
 
 })
@@ -10,7 +14,7 @@ const totalPendientes=computed(()=>{
 
   let tareasPendiente=0
 
-  for(let tarea of tareas.value){
+  for(let tarea of props.tareas){
 
     if(!tarea.completado){
       tareasPendiente++
