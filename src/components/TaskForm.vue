@@ -17,3 +17,26 @@ const obtenerTarea=()=>{
     <button id="btnAgregar" @click="obtenerTarea">Agregar</button>
  </section>
 </template>
+
+<style scoped>
+
+/**Sesion pra agregar tareas */
+
+input[type='text']{
+
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  margin-bottom: 50px;
+}
+
+#btnAgregar{
+  border-radius: 10px;
+  background-color: #228B22;
+  padding:5x;
+}
+
+#btnAgregar:hover{
+  color: white;
+}
+</style>
