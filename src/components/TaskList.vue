@@ -29,7 +29,8 @@ const agregarTarea=(nom)=>{
 
 <template>
 <div id="container">
-    <TaskForm @obtenerTarea="agregarTarea"/>
+    <!--@obtenerTarea es el evento definido en el emit-->
+    <TaskForm @obtenerTarea="agregarTarea"/><!--la función agregarTarea le paso como parametro la variable nomTarea que se envia junto con el evento obtenerTarea.-->
  
      <br></br>
     <label for="checkBoxPendiente">Mostras  pendientes</label>

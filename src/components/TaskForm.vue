@@ -5,6 +5,7 @@ const nomTarea=ref('');
 
 const emit=defineEmits(['obtenerTarea'])//defino mi evento
 
+//Cuando haga click en el botón se ejecutará esta función.
 const obtenerTarea=()=>{
     emit ('obtenerTarea',nomTarea.value)
 }
